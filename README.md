@@ -98,11 +98,11 @@ public class test{
 }
 ```
 
-- We test our Abstract Factory Design Pattern using a data.txt file that contains product names and prices.
-- We read each line, split it into product and price, and store these in respective variables.
-- Using the product name, we call the getFactory method from the factoryProducer abstract class to get a GroceryProductFactory instance.
-- If the factory instance exists for the product, we set its price and print the results.
-- If a FileNotFoundException occurs during execution, we catch it and print an error message along with the exception's stack trace.
+- We test our Abstract Factory Design Pattern using a `data.txt` file that contains product names and prices.
+- We read each line, split it into `product` and `price`, and store these in respective variables.
+- Using the product name, we call the `getFactory` method from the `factoryProducer` abstract class to get a `GroceryProductFactory` instance.
+- If the `factory` instance exists for the product, we set its `price` and print the results.
+- If a `FileNotFoundException` occurs during execution of the `try` block, we `catch` it and print an error message along with the exception's stack trace.
 
 > test.java | Output
 
