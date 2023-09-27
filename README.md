@@ -13,9 +13,9 @@
 
 ## Project Overview
 
-- [Repository Structure](#Repository-Structure)
-- [UML Diagram](#UML-Diagram)
-- [Test Driver](#Test-Driver)
+- [Repository Structure](#repository-structure)
+- [UML Diagram](#uml-diagram)
+- [Test Driver](#test-driver)
 
 ---
 
