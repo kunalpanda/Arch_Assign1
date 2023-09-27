@@ -2,11 +2,11 @@
 
 ## **Group #9**
 
-#### Kunal Pandya - 100792272
+####	 Kunal Pandya - 100792272
 
-#### Kramptj KC - 100787909
+####	 Kramptj KC - 100787909
 
-#### Syed Nasir - 100809447
+####	 Syed Nasir - 100809447
 
 ---
 
@@ -52,19 +52,19 @@ public  class  test{
 
 public  static  void  main(String[] args) {
 
-GroceryProductFactory  factory1  =  factoryProducer.getFactory("apples");
+	GroceryProductFactory  factory1  =  factoryProducer.getFactory("apples");
 
-factory1.setPrice(3.99);
+	factory1.setPrice(3.99);
 
-System.out.println(factory1);
+	System.out.println(factory1);
 
-GroceryProductFactory  factory2  =  factoryProducer.getFactory("bananas");
+	GroceryProductFactory  factory2  =  factoryProducer.getFactory("bananas");
 
-factory2.setPrice(4.99);
+	factory2.setPrice(4.99);
 
-System.out.println(factory2);
+	System.out.println(factory2);
 
-GroceryProductFactory  factory3  =  factoryProducer.getFactory("FalseValue");
+	GroceryProductFactory  factory3  =  factoryProducer.getFactory("FalseValue");
 
 	}
 
