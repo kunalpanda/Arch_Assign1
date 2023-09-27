@@ -1,6 +1,7 @@
-# **Assignment 1**
+# SOFE-3650U
+# Assignment 1: Design Patterns 
 
-## **Group #9**
+## Group #9
 
 #### Kunal Pandya - 100792272
 
@@ -12,9 +13,9 @@
 
 ## Project Overview
 
-- Repository Structure
-- UML Diagram
-- Test Driver
+- [Repository Structure](#repository-structure)
+- [UML Diagram](#uml-diagram)
+- [Test Driver](#test-driver)
 
 ---
 
@@ -52,19 +53,19 @@ public  class  test{
 
 public  static  void  main(String[] args) {
 
-GroceryProductFactory  factory1  =  factoryProducer.getFactory("apples");
+	GroceryProductFactory  factory1  =  factoryProducer.getFactory("apples");
 
-factory1.setPrice(3.99);
+	factory1.setPrice(3.99);
 
-System.out.println(factory1);
+	System.out.println(factory1);
 
-GroceryProductFactory  factory2  =  factoryProducer.getFactory("bananas");
+	GroceryProductFactory  factory2  =  factoryProducer.getFactory("bananas");
 
-factory2.setPrice(4.99);
+	factory2.setPrice(4.99);
 
-System.out.println(factory2);
+	System.out.println(factory2);
 
-GroceryProductFactory  factory3  =  factoryProducer.getFactory("FalseValue");
+	GroceryProductFactory  factory3  =  factoryProducer.getFactory("FalseValue");
 
 	}
 
@@ -76,4 +77,5 @@ For printing prices, we call the `toString()` methods of the `appleFactory` and 
 To test our error case, we made an instance of `GroceryProductFactory` for a non-existent product ("FalseValue"). This test returns null and prints "This is not a valid factory".
 
 > test.java | Output
-> ![](./UML/Test_Output.jpg)
+---
+![](./UML/Test_Output.jpg)
