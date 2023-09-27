@@ -71,11 +71,11 @@ public  static  void  main(String[] args) {
 
 }
 ```
----
+
 To implement our Abstract Factory Design Pattern we created instances of `GroceryProductFactory` interface for apples and bananas using the `getFactory` method of `factoryProducer` and set their respective prices.
 For printing prices, we call the `toString()` methods of the `appleFactory` and `bananaFactory` instances.
 To test our error case, we made an instance of `GroceryProductFactory` for a non-existent product ("FalseValue"). This test returns null and prints "This is not a valid factory".
----
+
 > test.java | Output
 ---
 ![](./UML/Test_Output.jpg)
