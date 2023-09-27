@@ -1,4 +1,5 @@
-# Assignment 1*
+# SOFE-3650U
+# Assignment 1: Design Patterns 
 
 ## Group #9
 
