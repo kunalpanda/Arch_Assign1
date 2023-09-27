@@ -1,11 +1,11 @@
-# **Assignment 1**
+# Assignment 1*
 
-## **Group #9**
----
+## Group #9
+
 Kunal Pandya - 100792272
----
+
 Kramptj KC - 100787909
----
+
 Syed Nasir - 100809447
 
 ---
