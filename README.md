@@ -1,5 +1,6 @@
 # SOFE-3650U
-# Assignment 1: Design Patterns 
+
+# Assignment 1: Design Patterns
 
 ## Group #9
 
@@ -23,8 +24,9 @@
 
 ```
 - Arch_Assign1
-	- UML
-		- UML.drawio
+	- screenDumps
+		- data_ss.jpg
+		- Test_Output.jpg
 		- UML_Diagram.png
 	- src
 		- data
@@ -36,16 +38,20 @@
 		- bananas.java
 		- factoryProducer.java
 		- products.java
+	- UML
+		- UML.drawio
 	- REAME.md
 	- test.java
 ```
 
 ## UML Diagram
 
-![](./UML/UML_Diagram.png)
+![](./screenDumps/UML_Diagram.png)
 
 ## Test Driver
 
+> data.txt
+> ![](./screenDumps/data_ss.jpg)
 > test.java
 
 ```
@@ -78,7 +84,7 @@ public class test{
                     System.out.println(factory);
                 }
             }
-        read.close();    
+        read.close();
         } catch (FileNotFoundException e) {
             System.out.println("Something went wrong -_-");
             e.printStackTrace();
@@ -88,10 +94,18 @@ public class test{
 }
 ```
 
-To implement our Abstract Factory Design Pattern we created instances of `GroceryProductFactory` interface for apples and bananas using the `getFactory` method of `factoryProducer` and set their respective prices.
-For printing prices, we call the `toString()` methods of the `appleFactory` and `bananaFactory` instances.
-To test our error case, we made an instance of `GroceryProductFactory` for a non-existent product ("FalseValue"). This test returns null and prints "This is not a valid factory".
+- To test our Abstract Factory Design Pattern we have a `Data.txt` file which holds preset values of products and their prices.
+
+- To use these values, we scan each line using a while loop and then split the line into parts using `split` method. After splitting products and prices we store them into respective `product` and `price` variables.
+
+- Splitting values helps us in using product name to call its respective factory using the `getFactory` method from abstract class `factoryProducer`. This gives us an instance of `GroceryProductFactory`.
+
+- If the instance `factory` exists for the `product`, then we set the `price` using `setPrice` method of the `factory` and then print out results.
+
+- If a `FileNotFoundException` is thrown in the `try` block while excuting, the `catch` block captures it and prints an error message with the stack trace of the exception.
 
 > test.java | Output
+
 ---
+
 ![](./screenDumps/Test_Output.jpg)
