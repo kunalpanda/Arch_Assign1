@@ -76,5 +76,5 @@ For printing prices, we call the `toString()` methods of the `appleFactory` and 
 To test our error case, we made an instance of `GroceryProductFactory` for a non-existent product ("FalseValue"). This test returns null and prints "This is not a valid factory".
 
 > test.java | Output
-
+---
 ![](./UML/Test_Output.jpg)
