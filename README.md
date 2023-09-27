@@ -51,7 +51,11 @@
 ## Test Driver
 
 > data.txt
-> ![](./screenDumps/data_ss.jpg)
+
+![](./screenDumps/data_ss.jpg)
+
+---
+
 > test.java
 
 ```
@@ -94,15 +98,11 @@ public class test{
 }
 ```
 
-- To test our Abstract Factory Design Pattern we have a `Data.txt` file which holds preset values of products and their prices.
-
-- To use these values, we scan each line using a while loop and then split the line into parts using `split` method. After splitting products and prices we store them into respective `product` and `price` variables.
-
-- Splitting values helps us in using product name to call its respective factory using the `getFactory` method from abstract class `factoryProducer`. This gives us an instance of `GroceryProductFactory`.
-
-- If the instance `factory` exists for the `product`, then we set the `price` using `setPrice` method of the `factory` and then print out results.
-
-- If a `FileNotFoundException` is thrown in the `try` block while excuting, the `catch` block captures it and prints an error message with the stack trace of the exception.
+- We test our Abstract Factory Design Pattern using a data.txt file that contains product names and prices.
+- We read each line, split it into product and price, and store these in respective variables.
+- Using the product name, we call the getFactory method from the factoryProducer abstract class to get a GroceryProductFactory instance.
+- If the factory instance exists for the product, we set its price and print the results.
+- If a FileNotFoundException occurs during execution, we catch it and print an error message along with the exception's stack trace.
 
 > test.java | Output
 
