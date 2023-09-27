@@ -49,26 +49,42 @@
 > test.java
 
 ```
-public  class  test{
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
-public  static  void  main(String[] args) {
+public class test{
 
-	GroceryProductFactory  factory1  =  factoryProducer.getFactory("apples");
+    public static void main(String[] args) {
+              try {
+            // Read and Scan file
+            File dataFile = new File("./src/data/data.txt");
+            Scanner read = new Scanner(dataFile);
 
-	factory1.setPrice(3.99);
+            while (read.hasNextLine()) {
+                String data = read.nextLine();
 
-	System.out.println(factory1);
+                // Split Product name and price
+                String[] parts = data.split(" ");
 
-	GroceryProductFactory  factory2  =  factoryProducer.getFactory("bananas");
+                String product = parts[0];
+                double price = Double.parseDouble(parts[1]);
 
-	factory2.setPrice(4.99);
+                // Get the factory for the product
+                GroceryProductFactory factory = factoryProducer.getFactory(product);
+                if (factory != null) {
+                    // Set the price and print the factory
+                    factory.setPrice(price);
+                    System.out.println(factory);
+                }
+            }
+        read.close();    
+        } catch (FileNotFoundException e) {
+            System.out.println("Something went wrong -_-");
+            e.printStackTrace();
+        }
 
-	System.out.println(factory2);
-
-	GroceryProductFactory  factory3  =  factoryProducer.getFactory("FalseValue");
-
-	}
-
+    }
 }
 ```
 
@@ -78,4 +94,4 @@ To test our error case, we made an instance of `GroceryProductFactory` for a non
 
 > test.java | Output
 ---
-![](./UML/Test_Output.jpg)
+![](./screenDumps/Test_Output.jpg)
