@@ -2,11 +2,11 @@
 
 ## Group #9
 
-Kunal Pandya - 100792272
+#### Kunal Pandya - 100792272
 
-Kramptj KC - 100787909
+#### Kramptj KC - 100787909
 
-Syed Nasir - 100809447
+#### Syed Nasir - 100809447
 
 ---
 
