@@ -14,34 +14,34 @@
 
 ## Project Overview
 
-- [Repository Structure](#repository-structure)
+- [Repository Structure Details](#repository-structure)
 - [UML Diagram](#uml-diagram)
 - [Test Driver](#test-driver)
 
 ---
 
-## Repository Structure
+## Repository Structure Details
 
 ```
 - Arch_Assign1
-	- screenDumps
+	- screenDumps   /* folder for screenshots  */
 		- data_ss.jpg
 		- Test_Output.jpg
 		- UML_Diagram.png
-	- src
+	- src   /* Source files for all .java class files */
 		- data
-			- data.txt
-		- GroceryProductFactory.java
-		- appleFactory.java
-		- apples.java
-		- bananaFactory.java
-		- bananas.java
-		- factoryProducer.java
-		- products.java
+			- data.txt      /* Data file with preset values for products and prices */
+		- GroceryProductFactory.java    /* Interface for product factories */
+		- appleFactory.java     /* Implements `GroceryProductFactory` interface `*/
+		- apples.java       /* Implements `products` interface */
+		- bananaFactory.java        /* Implements `GroceryProductFactory` interface `*/
+		- bananas.java      /* Implements `products` interface */
+		- factoryProducer.java      /* Abstract Class */
+		- products.java     /* Interface for products */
 	- UML
 		- UML.drawio
 	- REAME.md
-	- test.java
+	- test.java     /* Test Driver to read & loop through `data` file. `GroceryProductFactory` instance checks products and sets price */
 ```
 
 ## UML Diagram
