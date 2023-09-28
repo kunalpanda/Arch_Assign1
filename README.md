@@ -24,7 +24,7 @@
 
 ```
 - Arch_Assign1
-	- screenDumps           /* folder for screenshots  */
+	- screenDumps           /* Folder for screenshots  */
 		- data_ss.jpg
 		- Test_Output.jpg
 		- UML_Diagram.png
