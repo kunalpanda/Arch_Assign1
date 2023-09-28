@@ -24,11 +24,11 @@
 
 ```
 - Arch_Assign1
-	- screenDumps   /* folder for screenshots  */
+	- screenDumps           /* folder for screenshots  */
 		- data_ss.jpg
 		- Test_Output.jpg
 		- UML_Diagram.png
-	- src   /* Source files for all .java class files */
+	- src                   /* Source files for all .java class files */
 		- data
 			- data.txt      /* Data file with preset values for products and prices */
 		- GroceryProductFactory.java    /* Interface for product factories */
@@ -41,7 +41,7 @@
 	- UML
 		- UML.drawio
 	- REAME.md
-	- test.java     /* Test Driver to read & loop through `data` file. `GroceryProductFactory` instance checks products and sets price */
+	- test.java             /* Test Driver to read & loop through `data` file. `GroceryProductFactory` instance checks products and sets price */
 ```
 
 ## UML Diagram
